@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>花生的园子</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-07-27T12:31:11.724Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>luckwang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="http://yoursite.com/2018/07/27/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2018/07/27/测试/</id>
+    <published>2018-07-27T11:58:42.000Z</published>
+    <updated>2018-07-27T12:31:11.724Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一篇测试hexo文章…</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是一篇测试hexo文章…&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="first" scheme="http://yoursite.com/tags/first/"/>
+    
+  </entry>
+  
+</feed>
