@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vm," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="About program &amp; network &amp; life">
-<meta property="og:type" content="website">
-<meta property="og:title" content="花生的园子">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="安装docker每台节点机器都要安装 docker 并设置下列操作 1curl -sSL https://get.docker.io | bash  docker daemon 设置为 shared 模式  1234567mkdir -p /etc/systemd/system/docker.service.d/kolla.confcat &amp;gt; /etc/systemd/system/dock">
+<meta name="keywords" content="vm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kolla部署Openstack步骤">
+<meta property="og:url" content="http://yoursite.com/2018/12/09/kolla部署Openstack步骤/index.html">
 <meta property="og:site_name" content="花生的园子">
-<meta property="og:description" content="About program &amp; network &amp; life">
+<meta property="og:description" content="安装docker每台节点机器都要安装 docker 并设置下列操作 1curl -sSL https://get.docker.io | bash  docker daemon 设置为 shared 模式  1234567mkdir -p /etc/systemd/system/docker.service.d/kolla.confcat &amp;gt; /etc/systemd/system/dock">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-12-09T04:19:40.704Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="花生的园子">
-<meta name="twitter:description" content="About program &amp; network &amp; life">
+<meta name="twitter:title" content="kolla部署Openstack步骤">
+<meta name="twitter:description" content="安装docker每台节点机器都要安装 docker 并设置下列操作 1curl -sSL https://get.docker.io | bash  docker daemon 设置为 shared 模式  1234567mkdir -p /etc/systemd/system/docker.service.d/kolla.confcat &amp;gt; /etc/systemd/system/dock">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/12/09/kolla部署Openstack步骤/"/>
 
 
 
 
 
-  <title>花生的园子</title>
+  <title>kolla部署Openstack步骤 | 花生的园子</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/09/kolla部署Openstack步骤/" itemprop="url">kolla部署Openstack步骤</a></h1>
+          <h1 class="post-title" itemprop="name headline">kolla部署Openstack步骤</h1>
         
 
         <div class="post-meta">
@@ -301,9 +300,7 @@
       
 
       
-        
-          
-            <h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>每台节点机器都要安装 docker 并设置下列操作</p>
+        <h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>每台节点机器都要安装 docker 并设置下列操作</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://get.docker.io | bash</span><br></pre></td></tr></table></figure>
 <ul>
 <li>docker daemon 设置为 shared 模式</li>
@@ -341,8 +338,6 @@
 <li>编辑 init-runonce，初始化网络环境</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/local/share/kolla-ansible/init-runonce .</span><br><span class="line">./init-runonce</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -357,257 +352,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/02/简单的将函数变为多线程执行/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="luckwang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="花生的园子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/02/简单的将函数变为多线程执行/" itemprop="url">简单的将函数变为多线程执行</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-02T11:58:05+08:00">
-                2018-09-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/vm/" rel="tag"># vm</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在工作中需要ping大量主机检测状态，为了方便，采用python的multiprocess的进程池，方便的将现有函数改造成多进程运行：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># _*_coding:utf-8_*_</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line"><span class="keyword">from</span> multiprocessing <span class="keyword">import</span> Pool</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getStatusList</span><span class="params">(ip_list)</span>:</span></span><br><span class="line">    status = &#123;&#125;</span><br><span class="line">    t_list = tuple()</span><br><span class="line">    pool = Pool(processes=len(ip_list))</span><br><span class="line">    <span class="keyword">for</span> ip <span class="keyword">in</span> ip_list:</span><br><span class="line">        p = pool.apply_async(ping, (ip,))</span><br><span class="line">        t_list += (p,)</span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> result <span class="keyword">in</span> t_list:</span><br><span class="line">        status.update(result.get())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> status</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ping</span><span class="params">(ip)</span>:</span></span><br><span class="line">    status = subprocess.call([<span class="string">"ping"</span>, <span class="string">"-q"</span>, <span class="string">"-c 2"</span>, <span class="string">"-W 1"</span>, ip], shell=<span class="keyword">False</span>, stdin=subprocess.PIPE, stdout=subprocess.PIPE)</span><br><span class="line">    <span class="keyword">return</span> &#123;ip: status&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(getStatusList([<span class="string">'127.0.0.1'</span>, <span class="string">'192.168.0.1'</span>, <span class="string">'192.168.0.2'</span>, <span class="string">'192.168.0.3'</span>, <span class="string">'192.168.0.4'</span>, <span class="string">'192.168.0.5'</span>, <span class="string">'192.168.0.6'</span>]))</span><br></pre></td></tr></table></figure>
-<p>这里使用了Pool对象，异步调用了ping，可以方便的将现有函数进行改造。</p>
-<p>另外，由于GIL的存在，python的多线程无法合理的使用cpu，如果是CPU密集型程序，还是使用多线程更为合理，multiprocess的调用也更加方便。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/27/测试/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="luckwang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="花生的园子">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/27/测试/" itemprop="url">测试文章</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-27T19:58:42+08:00">
-                2018-07-27
-              </time>
+              <a href="/2018/09/02/简单的将函数变为多线程执行/" rel="next" title="简单的将函数变为多线程执行">
+                <i class="fa fa-chevron-left"></i> 简单的将函数变为多线程执行
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>这是一篇测试hexo文章…</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -617,10 +391,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -628,6 +403,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -648,8 +427,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -700,6 +488,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装docker"><span class="nav-number">1.</span> <span class="nav-text">安装docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装基本工具"><span class="nav-number">2.</span> <span class="nav-text">安装基本工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kolla-ansible配置"><span class="nav-number">3.</span> <span class="nav-text">kolla-ansible配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署openstack"><span class="nav-number">4.</span> <span class="nav-text">部署openstack</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -833,6 +637,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
